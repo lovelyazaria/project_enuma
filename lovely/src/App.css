@@ -1,9 +1,105 @@
+/*NAVBAR*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 60px;
+  background-color: #242424;
+}
+
+.brand-logo {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #4ea8de;
+}
+
+/*TUGAS*/
 .tugas {
   display: flex;
   justify-content: space-between;
   margin: 10px;
   width: 75%;
 }
+
+/*PROFILE*/
+.profile-container {
+  width: 75%;
+  margin: 40px auto;
+}
+
+.profile-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-card {
+    background: rgb(15, 13, 27);
+    color: black;
+
+    padding: 25px;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.profile-card h2 {
+    margin-bottom: 20px;
+}
+
+.profile-card p {
+    margin: 12px 0;
+    line-height: 1.6;
+    color: white;
+}
+
+/*PROJECT*/
+.project-container {
+    width: 75%;
+    margin: 40px auto;
+}
+
+.project-section {
+    margin-bottom: 45px;
+}
+
+.project-section h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.project-section ol {
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.project-section li {
+    color: white;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

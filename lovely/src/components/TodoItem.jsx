@@ -1,12 +1,17 @@
-function TodoItem({task}) {
+function TodoItem({task, onDelete, onEdit}) {
   return (
     <div className="tugas">
       <input type="checkbox" />
-      <p>{task}</p>
-      <button>edit</button>
-      <button>hapus</button>
-    </div>
+      <p>{task.description}</p>
 
+      <button onClick={() => onEdit(task.id)}>
+        Edit
+      </button>
+
+      <button onClick={() => onDelete(task.id)}>
+        Hapus
+      </button>
+    </div>
   );
 }
 

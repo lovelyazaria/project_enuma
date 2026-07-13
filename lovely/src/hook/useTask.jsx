@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 function useTask() {
-    const [tasks, setTasks] = useState("");
+    const [tasks, setTasks] = useState(()=>{
+        const savedTasks = localStorage.getItem("tasks");
+        return savedTasks ? JSON.parse(savedTasks) : [];
+    });
 
     useEffect(()=>{
         localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -14,11 +17,17 @@ function useTask() {
         }
         setTasks(prevTasks => [...prevTasks, newTask]);
     };
-    const deleteTask = ()=>{};
-    const updateTask = ()=>{};
+
+    const deleteTask = (id)=>{
+        setTasks(prevTasks => prevTasks.filter(task => task.id !== id));
+    };
+
+    const updateTask = (id, newDesription)=>{
+        setTasks(prevTasks => prevTasks.map(task => task.id === id ? {...task, description: newDesription} : task));
+    };
 
   
-    return {tasks, addTask};
+    return {tasks, addTask, deleteTask, updateTask};
 }
 
 export default useTask;

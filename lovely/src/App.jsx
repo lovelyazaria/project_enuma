@@ -7,21 +7,26 @@ import './components/TodoItem'
 import TodoItem from './components/TodoItem'
 import TodoList from './components/TodoList'
 import TodoForm from './components/TodoForm'
+import Navbar from './components/Navbar'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Profile from './pages/Profile'
+import Project from './pages/Project';
 
 function App() {
   const [count, setCount] = useState(0)
   const [tasks, addTasks] = useState([]);
   return (
     <>
-   <nav>
-    navbar
-   </nav>
    
-   <h1>App</h1>
-  <p>Ini adalah sesuatu yang menyenangkan</p>
-  <TodoForm onAddTask={addTasks} />
-  <TodoList />
-  
+   <Navbar />
+   
+   <Routes>
+    <Route path="/" element={<Home addTasks={addTasks} />} />
+    <Route path="/profile" element={<Profile/>} />
+    <Route path="/project" element={<Project/>} />
+    <Route path="/about" element={<h1>About</h1>} />
+   </Routes>
 
    </>
 
