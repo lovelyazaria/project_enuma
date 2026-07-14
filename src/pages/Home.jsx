@@ -52,8 +52,6 @@ export default function Home() {
                 <TodoList tasks={filteredTasks} onDelete={deleteTask} onEdit={handleEdit} onToggle={toggleStatus} />
             </div>
         </div>
-    </div>
-    
     </>
   );
 }
