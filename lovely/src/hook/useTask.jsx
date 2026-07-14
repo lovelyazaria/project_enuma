@@ -26,8 +26,12 @@ function useTask() {
         setTasks(prevTasks => prevTasks.map(task => task.id === id ? {...task, description: newDesription} : task));
     };
 
+    const toggleStatus = (id)=>{
+        setTasks(prevTasks => prevTasks.map(task => task.id === id ? {...task, status: task.status === "0" ? "1" : "0"} : task));
+    };
+
   
-    return {tasks, addTask, deleteTask, updateTask};
+    return {tasks, addTask, deleteTask, updateTask, toggleStatus};
 }
 
 export default useTask;

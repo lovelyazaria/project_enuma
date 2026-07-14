@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <NavLink to="/" className="brand-logo">
-                Logo
+                TodoOo
             </NavLink>
 
             <div className="nav-links">

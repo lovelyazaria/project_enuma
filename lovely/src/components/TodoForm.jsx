@@ -11,12 +11,10 @@ function TodoForm({ onAddTask }) {
     };
 
   return (
-    <div className="form">
-    <form onSubmit={handleSubmit}>
+    <form className="todo-form" onSubmit={handleSubmit}>
       <input type="text" placeholder='Masukkan tugas baru' value={input} onChange={(e) => setInput(e.target.value)}/>  
       <button type="submit">Tambah</button>
-      </form>
-    </div>
+    </form>
   );
 }
 
