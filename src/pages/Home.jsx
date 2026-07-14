@@ -21,7 +21,6 @@ export default function Home() {
     });
     
     return (
-    <>
     <div className="home-container">
         <div className="home-section">
                 <h1 className="home-title">Daftar Tugas</h1>
@@ -29,7 +28,6 @@ export default function Home() {
 
             <TodoForm onAddTask={addTask} />
             </div>
-        </div>
 
         <div className="task-section">
             <div className="task-header">
@@ -52,6 +50,6 @@ export default function Home() {
                 <TodoList tasks={filteredTasks} onDelete={deleteTask} onEdit={handleEdit} onToggle={toggleStatus} />
             </div>
         </div>
-    </>
+    </div>
   );
 }
