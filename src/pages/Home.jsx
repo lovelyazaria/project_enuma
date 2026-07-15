@@ -23,8 +23,13 @@ export default function Home() {
     return (
     <div className="home-container">
         <div className="home-section">
-                <h1 className="home-title">Daftar Tugas</h1>
-                <p className="home-subtitle">Kelola prioritas harian Anda dengan mudah.</p>
+                <div className="home-title">
+                    <h1>Daftar Tugas</h1>
+                </div>
+
+                <div className="home-subtitle">
+                    <p>Kelola prioritas harian Anda dengan mudah.</p>
+                </div>
 
             <TodoForm onAddTask={addTask} />
             </div>

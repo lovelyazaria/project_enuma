@@ -11,7 +11,8 @@ import Navbar from './components/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
-import Project from './pages/Project';
+import Project from './pages/Project'
+import About from './pages/About';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,7 +26,7 @@ function App() {
     <Route path="/" element={<Home addTasks={addTasks} />} />
     <Route path="/profile" element={<Profile/>} />
     <Route path="/project" element={<Project/>} />
-    <Route path="/about" element={<h1>About</h1>} />
+    <Route path="/about" element={<About/>} />
    </Routes>
 
    </>

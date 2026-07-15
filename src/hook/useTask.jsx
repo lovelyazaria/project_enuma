@@ -22,8 +22,8 @@ function useTask() {
         setTasks(prevTasks => prevTasks.filter(task => task.id !== id));
     };
 
-    const updateTask = (id, newDesription)=>{
-        setTasks(prevTasks => prevTasks.map(task => task.id === id ? {...task, description: newDesription} : task));
+    const updateTask = (id, newDescription)=>{
+        setTasks(prevTasks => prevTasks.map(task => task.id === id ? {...task, description: newDescription} : task));
     };
 
     const toggleStatus = (id)=>{

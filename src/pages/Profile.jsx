@@ -1,3 +1,4 @@
+import lovely from "../assets/lovely.jpeg";
 import { FaGithub, FaInstagram} from "react-icons/fa"
 
 export default function Profile() {
@@ -32,15 +33,18 @@ export default function Profile() {
         </div>
 
         <div className="card profile-box">
-          <img src="" alt=""/>
+          <img src={lovely} alt="Foto Profile Lovely"/>
           <h2>Hello I'm</h2>
           <h1>Lovely</h1>
 
-          <p>Siswa PPLG yang senang belajar membuat website sederhana.</p>
-
           <div className="social">
+            <a href="https://github.com/lovelyazaria" target="blank" rel="noopener noreferrer">
             <FaGithub />
+            </a>
+
+            <a href="https://www.instagram.com/ell0ovee?igsh=MW1tYjF3YjFtZjViMA==" target="blank" rel="noopener noreferrer">
             <FaInstagram />
+            </a>
           </div>
         </div>
 
