@@ -234,36 +234,36 @@ body{
 .profile-subtitle{
   text-align:center;
   color:#b9b9c9;
-  margin-bottom:80px;
+  margin-bottom:40px;
 }
 
 .profile-content{
-  max-width:1100px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1fr 1.4fr 1fr;
-  gap:25px;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: stretch;
 }
 
 .card{
   background:#171827;
   border-radius:18px;
-  padding:25px;
+  padding:18px 22px;
   box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
-.details p{
-    margin-top:20px;
-    margin-bottom:5px;
-}
-
-.details span{
-    color:#c9c9d4;
+.about h2{
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 20px;
+    position: relative;
 }
 
 .about p{
     line-height:1.8;
     color:#c9c9d4;
+    margin-top: 40px;
 }
 
 .about button{
@@ -489,7 +489,7 @@ body{
 
 .about-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .about-header h1 {
@@ -628,6 +628,22 @@ body{
   color: #c7c7d4;
   line-height: 1.8;
   text-align: justify;
+}
+
+/* Result */
+.result-link{
+    margin-top:10px;
+    font-size:15px;
+}
+
+.result-link a{
+    color:#4da6ff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.result-link a:hover{
+    text-decoration:underline;
 }
 
 /* Responsive */
