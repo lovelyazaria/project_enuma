@@ -12,6 +12,7 @@ import day18 from "../assets/day2-3.png";
 import day19 from "../assets/day2-4.png";
 import day20 from "../assets/day3-1.png";
 import day21 from "../assets/day3-2.png";
+import day22 from "../assets/day4-1.png";
 
 export default function About() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -83,7 +84,19 @@ export default function About() {
         description:
             "Mengenal website Tinkercad sebagai media untuk mendesain objek 3D. Pada praktik ini, dibuat sebuah model balok tanpa tutup menggunakan fitur-fitur dasar Tinkercad, seperti mengatur ukuran, menyusun bentuk, dan menggabungkan objek menjadi satu desain 3D.",
         },
-    ],
+      ],
+    },
+    {
+    day: "Pelatihan PKL Day 4",
+    date: "17 Juli 2026",
+    documentation: [
+        {
+        image: day22,
+        title: "Wokwi",
+        description:
+        "Wokwi digunakan sebagai simulator dalam proses pengembangan proyek IoT, mulai dari merancang rangkaian, menghubungkan komponen, hingga menguji kode program pada mikrokontroler secara virtual.",
+        },
+      ],
     },
     ];
 
